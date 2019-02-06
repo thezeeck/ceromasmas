@@ -1,0 +1,35 @@
+<section  id="rouguan" class="">
+  <img src="img/cerologo.png" alt="" class="imagenLogo">
+  <div id="rsContainer" class=" ">
+    <i class="fas fa-phone-square iconoRedes"></i>+52 (33) 3632 6950
+    <i class="fab fa-facebook-square iconoRedes"></i>
+    <i class="fab fa-youtube iconoRedes"></i>
+  </div>
+</section>
+<section  id="routu" class="flexHorizontalContainer">
+  <a id="menu" class="responsiveMenu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+      </svg>
+  </a>
+  <ul id="menuBar" class="nav" >
+    <a href="index.html" class="anav"><li> <i class="fa fa-home"></i> Inicio</li></a>
+    <a href="conocenos.html" class="anav"><li>Conócenos</li></a>
+    <a href="precios.html" class="anav" ><li>Precios</li></a>
+    <a href="facturaone.html" class="anav"><li>  Factura One</li></a>
+    <a href="contacto.html" class="anav"><li>Información </li></a>
+    <a href="blog.html" class="anav"><li>Blog </li></a>
+  </ul>
+</section>
+<script>
+var menu = document.querySelector('#menu');
+var main = document.querySelector('#norte');
+var drawer = document.querySelector('.nav');
+menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('abrir');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('abrir');
+      });
+</script>
