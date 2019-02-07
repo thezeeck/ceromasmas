@@ -27,7 +27,18 @@ body {
     #norte nav > i {
       margin-left: 32px; }
   #norte .sub-header {
-    background-color: #7DA5B7; }
+    background: #7DA5B7;
+    justify-content: center;
+    display: flex;
+    color: #fff; }
+    #norte .sub-header .responsive-menu {
+      font-size: 32px;
+      padding: 16px; }
+    #norte .sub-header .navigation {
+      display: none; }
+      @media (min-width: 1000px) {
+        #norte .sub-header .navigation {
+          display: block; } }
 
 /* .imagenLogo{
   margin-left:  80px;
