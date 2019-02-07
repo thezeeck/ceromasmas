@@ -1,10 +1,20 @@
 $(function(data){
-  $.when($("#norte").load("templates/norte.html"), $("#sur").load("templates/sur.html")).then(()=>{
-    $("#menu").on("click", () => {
-      $(this).addClass("active");
+  haderLoad();
+});
+
+function haderLoad() {
+  var $header = new $.Deferred(),
+      $footer = new $.Deferred();
+
+  $.when($header, $footer).then(function() {
+    $("#menu").on("click", (e) => {
+      $(e.currentTarget).toggleClass("active").next().slideToggle();
     });
   });
-});
+
+  $("#norte").load("templates/norte.html", function() { $header.resolve(); });
+  $("#sur").load("templates/sur.html", function() { $footer.resolve(); });
+}
 
 function carousel() {
 	 var i,x = $(".slide"),y=$(".carousel_indicator");
