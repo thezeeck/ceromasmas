@@ -38,9 +38,24 @@
     .responsive-menu {
       font-size: 32px;
       padding: 16px;
+      position: relative;
+      cursor: pointer;
+      width: 62px;
+      height: 62px;
 
       @media (min-width: 1000px) {
         display: none;
+      }
+
+      i {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+
+        &.fa-times {
+          left: 19px;
+          display: none;
+        }
       }
     }
 

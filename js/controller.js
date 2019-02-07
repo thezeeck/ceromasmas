@@ -1,6 +1,8 @@
 $(function(data){
   $.when($("#norte").load("templates/norte.html"), $("#sur").load("templates/sur.html")).then(()=>{
-    console.log("Ready");
+    $("#menu").on("click", () => {
+      $(this).addClass("active");
+    });
   });
 });
 
