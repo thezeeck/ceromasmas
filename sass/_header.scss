@@ -38,6 +38,10 @@
     .responsive-menu {
       font-size: 32px;
       padding: 16px;
+
+      @media (min-width: 1000px) {
+        display: none;
+      }
     }
 
     .navigation {
