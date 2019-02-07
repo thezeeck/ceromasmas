@@ -3,12 +3,23 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   position: relative; }
+  body * {
+    box-sizing: border-box; }
 
 #norte {
   position: relative; }
   #norte header {
     display: flex;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px; }
+    #norte header a {
+      padding: 16px; }
+      #norte header a img {
+        max-width: 200px; }
+  #norte nav {
+    flex: 1; }
 
 /* .imagenLogo{
   margin-left:  80px;
