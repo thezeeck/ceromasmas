@@ -19,7 +19,13 @@ body {
       #norte header a img {
         max-width: 200px; }
   #norte nav {
-    flex: 1; }
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    font-size: 18px; }
+    #norte nav > i {
+      margin-left: 32px; }
 
 /* .imagenLogo{
   margin-left:  80px;
