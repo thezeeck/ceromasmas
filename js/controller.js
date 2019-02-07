@@ -1,6 +1,7 @@
 $(function(data){
-  $.when($("#norte").load("templates/norte.html")).then(function(){});
-  $.when($("#sur").load("templates/sur.html")).then(function(){});
+  $.when($("#norte").load("templates/norte.html"), $("#sur").load("templates/sur.html")).then(()=>{
+    console.log("Ready");
+  });
 });
 
 function carousel() {
