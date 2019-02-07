@@ -2,7 +2,19 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  position: relative;
 }
+
+#norte {
+    position: relative;
+
+    header {
+       display: flex;
+       flex-wrap: nowrap;
+   }
+}
+
 
 /* .imagenLogo{
   margin-left:  80px;
