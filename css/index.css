@@ -26,6 +26,8 @@ body {
     font-size: 18px; }
     #norte nav > i {
       margin-left: 32px; }
+  #norte .sub-header {
+    background-color: #7DA5B7; }
 
 /* .imagenLogo{
   margin-left:  80px;
