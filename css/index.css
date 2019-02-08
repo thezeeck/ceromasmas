@@ -79,7 +79,14 @@ body {
       margin: 16px 0; }
       @media (min-width: 1000px) {
         #norte .sub-header .navigation {
-          display: block; } }
+          display: block;
+          margin: 0; }
+          #norte .sub-header .navigation > li {
+            display: inline-block; }
+            #norte .sub-header .navigation > li a {
+              padding: 24px; }
+              #norte .sub-header .navigation > li a.active, #norte .sub-header .navigation > li a:hover, #norte .sub-header .navigation > li a:active {
+                background-color: #003968; } }
       #norte .sub-header .navigation a {
         padding: 8px;
         display: inline-block;
@@ -90,6 +97,11 @@ body {
           margin: 0 8px 0 0; }
 
 /* */
+#sur {
+  background-color: #003968;
+  color: #fff;
+  text-align: center; }
+
 /* .imagenLogo{
   margin-left:  80px;
   width: 187px;
