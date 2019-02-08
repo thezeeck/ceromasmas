@@ -101,6 +101,18 @@ body {
   background-color: #003968;
   color: #fff;
   text-align: center; }
+  #sur footer {
+    padding: 32px 0;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; }
+    #sur footer .footer-container {
+      width: 50%; }
+      #sur footer .footer-container .footer-block-contact {
+        display: flex;
+        justify-content: right;
+        padding-right: 16px; }
 
 /* .imagenLogo{
   margin-left:  80px;
