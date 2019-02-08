@@ -102,6 +102,21 @@
 
       @media (min-width: 1000px) {
         display: block;
+        margin: 0;
+
+        > li {
+          display: inline-block;
+
+          a {
+            padding: 24px;
+
+            &.active,
+            &:hover,
+            &:active {
+              background-color: $primary-dark;
+            }
+          }
+        }
       }
 
       a {
