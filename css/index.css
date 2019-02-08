@@ -97,6 +97,11 @@ body {
           margin: 0 8px 0 0; }
 
 /* */
+#sur {
+  background-color: #003968;
+  color: #fff;
+  text-align: center; }
+
 /* .imagenLogo{
   margin-left:  80px;
   width: 187px;
