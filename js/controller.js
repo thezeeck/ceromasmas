@@ -7,6 +7,15 @@ function haderLoad() {
       $footer = new $.Deferred();
 
   $.when($header, $footer).then(function() {
+    let currentMenu = location.href,
+        linksMenu = $("#menuBar a");
+
+    for (var i = 0; i < linksMenu.length; i++) {
+      if (linksMenu[i].href === currentMenu) {
+        $(linksMenu[i]).addClass("active");
+      }
+    }
+
     $("#menu").on("click", (e) => {
       $(e.currentTarget).toggleClass("active").next().slideToggle();
     });
