@@ -135,7 +135,10 @@ body {
           #sur footer .footer-container .footer-block-contact .white-icon + div {
             text-align: left; }
             #sur footer .footer-container .footer-block-contact .white-icon + div p {
-              width: 200px; }
+              width: auto; }
+              @media (min-width: 1000px) {
+                #sur footer .footer-container .footer-block-contact .white-icon + div p {
+                  width: 200px; } }
       #sur footer .footer-container .social-media {
         max-width: 200px;
         padding-left: 0;
