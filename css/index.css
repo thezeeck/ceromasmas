@@ -44,6 +44,11 @@ body {
         padding-bottom: 0; } }
     #norte nav > i {
       margin-left: 32px; }
+      #norte nav > i:first-child {
+        margin: 0; }
+        @media (min-width: 1000px) {
+          #norte nav > i:first-child {
+            margin-left: 32px; } }
   #norte .sub-header {
     background: #7DA5B7;
     justify-content: center;
@@ -178,10 +183,22 @@ body {
 
 .flex-horizontal-container {
   margin: 16px 0;
-  padding: 0;
   display: flex;
-  padding: 32px;
-  background-color: #D1DFE6; }
+  padding: 32px 16px;
+  background-color: #D1DFE6;
+  list-style: none;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .flex-horizontal-container li {
+    width: 100%;
+    padding: 0 16px;
+    max-width: 400px; }
+    @media (min-width: 1000px) {
+      .flex-horizontal-container li {
+        width: 33.3333%; } }
+    .flex-horizontal-container li img {
+      max-width: 60%; }
 
 .wrap-poli {
   padding: 36px 76px;
