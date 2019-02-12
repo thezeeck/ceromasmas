@@ -6,6 +6,11 @@ body {
   body * {
     box-sizing: border-box; }
 
+.wrap-poli {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 32px; }
+
 #norte {
   position: relative; }
   #norte header {
