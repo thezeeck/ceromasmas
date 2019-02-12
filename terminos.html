@@ -8,12 +8,40 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <title>facturación electrónica</title>
   </head>
+
+  <style media="screen">
+  .accordion {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  </style>
+
   <body>
     <section id="norte"></section>
 
-    <div id="termsBox">
+    <div class="wrap-poli">
       <div id="intro">
-        <h2 id="tituloPolíticas">Términos y condiciones de uso</h2>
+        <h2 class="titulo-poli">Términos y condiciones de uso</h2>
         <p>
           Los términos de uso que a continuación se presentan constituyen el acuerdo entre Cero Más Más (La
           Empresa) y cualquier usuario de este sitio, cuya dirección electrónica es: soporte@ceromm.com.mx
@@ -28,9 +56,9 @@
           cualquiera de sus páginas y/o formularios.
         </p>
       </div>
-      <ul>
-        <li id="accordion" class="acc-01">
-          <h3>Acceso y utilización del sitio</h3>
+      <div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Acceso y utilización del sitio</button>
+        <div class="panel">
           <p>
             El sitio www.ceromm.com.mx es de acceso y caracter gratuito para el usuario o visitante que explore
             nuestras páginas. El usuario de www.ceromm.com.mx no estará obligado a registrarse, salvo cuando se
@@ -48,9 +76,9 @@
             configuración de la plataforma, diseño de contenidos y, en general, cualquier aspecto que forme parte
             del sitio www.ceromm.com.mx
           </p>
-        </li>
-        <li id="accordion" class="acc-02">
-          <h3>Sobre los contenidos</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Sobre los contenidos</button>
+        <div class="panel">
           <p>
             El usuario o visitante de www.ceromm.com.mx se compromete a hacer uso correcto de la información y
             contenidos del sitio conforme a las leyes aplicables y a lo dispuesto en nuestros términos y condiciones
@@ -58,9 +86,9 @@
             menoscabe de manera total o parcial los derechos o intereses de Cero Más Más, ni de personas
             vinculadas de manera directa o indirectamente, o de terceros.
           </p>
-        </li>
-        <li id="accordion" class="acc-03">
-          <h3>Obtención de nuestros contenidos</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Obtención de nuestros contenidos</button>
+        <div class="panel">
           <p>
             El usuario o visitante de www.ceromm.com.mx debe abstenerse de obtener información de este sitio,
             como textos, mensajes, gráficos, dibujos, imágenes, archivos de sonido, fotografías, grabaciones,
@@ -68,9 +96,9 @@
             apegue a los lineamientos de uso correcto de contenidos, basados en la Ley de Protección de Derechos
             de Autor vigente.
           </p>
-        </li>
-        <li id="accordion" class="acc-04">
-          <h3>Del uso correcto de contenidos</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Del uso correcto de contenidos</button>
+        <div class="panel">
           <p>
             El usuario o visitante de www.ceromm.com.mx se obliga a usar los elementos en el sitio de manera
             correcta y lícita absteniéndose de lo siguiente:
@@ -95,9 +123,9 @@
             que se presentara en su ordenador (hardware) o programas (software) utilizado por el usuario o
             visitante para acceder o navegar en cualquier página del sitio.
           </p>
-        </li>
-        <li id="accordion" class="acc-05">
-          <h3>Exclusión de garantías y de responsabilidad</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Exclusión de garantías y de responsabilidad</button>
+        <div class="panel">
           <p>
             La exclusión de garantías y de responsabilidad por el funcionamiento de www.ceromm.com.mx y de
             cualquiera de sus contenidos, virus y otros elementos dañinos. Cero Más Más no controla y no garantiza
@@ -105,9 +133,9 @@
             puedan producir alteraciones en el sistema informático del usuario o visitante (hardware y software) así
             como de los documentos electrónicos y cookies almacenadas en sus sistemas informáticos.
           </p>
-        </li>
-        <li id="accordion" class="acc-06">
-          <h3>Sitios y contenidos ajenos al sitio y a los contenidos</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Sitios y contenidos ajenos al sitio y a los contenidos</button>
+        <div class="panel">
           <p>
             Al ser una institución pública, sin fines de lucro, independiente y ajena a partidismos políticos y
             religiosos, Cero Más Más no permite la publicación de contenidos que contravengan a este carácter y se
@@ -126,9 +154,9 @@
             de sus contenidos ajenos al sitio, ni acepta cargo alguno por publicidad, a menos que se cuente con un
             contrato previamente firmado por las partes.
           </p>
-        </li>
-        <li id="accordion" class="acc-07">
-          <h3>Negación y retiro del acceso al sitio y/o a los contenidos</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Negación y retiro del acceso al sitio y/o a los contenidos</button>
+        <div class="panel">
           <p>
             Cero Más Más se reserva el derecho a negar o retirar el acceso al sitio y/o a los contenidos en cualquier
             momento y sin previo aviso, por iniciativa propia o a petición de cualquier persona, a cualquier usuario
@@ -136,26 +164,26 @@
             cualquiera de sus partes o secciones o a los contenidos, o que incumplan total o parcialmente estos
             términos de uso o las condiciones particulares que resulten aplicables.
           </p>
-        </li>
-        <li id="accordion" class="acc-08">
-          <h3>Duración y terminación</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Duración y terminación</button>
+        <div class="panel">
           <p>
             El sitio y los contenidos tienen una duración indefinida. Sin embargo, Cero Más Más podrá dar por
             terminada, suspender o interrumpir en cualquier momento y sin necesidad de previo aviso el sitio y/o
             cualquiera de los contenidos.
           </p>
-        </li>
-        <li id="accordion" class="acc-09">
-          <h3>Obligación de observar las instrucciones</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Obligación de observar las instrucciones</button>
+        <div class="panel">
           <p>
             El usuario se compromete a seguir al pie de la letra cualquier instrucción impartida por Cero Más Más o
             por personal autorizado por Cero Más Más que se encuentre relacionado con el sitio, en referencia con
             cualquier mecanismo o procedimiento establecido para usar el sitio y los contenidos. El usuario
             únicamente debe seguir instrucciones impartidas por Cero Más Más.
           </p>
-        </li>
-        <li id="accordion" class="acc-10">
-          <h3>Responsabilidad por daños y perjuicios</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Responsabilidad por daños y perjuicios</button>
+        <div class="panel">
           <p>
             El usuario es responsable de cualquier daño y/o perjuicio de cualquier naturaleza que ocasione por
             incumplir estos términos de uso o cualquier normatividad aplicable, por lo que deslinda a Cero Más Más
@@ -170,9 +198,9 @@
             caso de retraso del pago en el término indicado, el usuario se obliga a pagar a Cero Más Más por
             concepto de pena convencional una cantidad equivalente a la suerte principal.
           </p>
-        </li>
-        <li id="accordion" class="acc-11">
-          <h3>Datos de carácter personal</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Datos de carácter personal</button>
+        <div class="panel">
           <p>
             Para utilizar o gozar de algunos de los contenidos es necesario que el usuario proporcione previamente
             a Cero Más Más ciertos datos de carácter personal (en adelante datos personales) que Cero Más Más
@@ -194,9 +222,9 @@
             sido proporcionada con terceras personas, a menos que sea requerido para proporcionar un servicio o
             un producto requerido por el usuario.
           </p>
-        </li>
-        <li id="accordion" class="acc-12">
-          <h3>Licencia</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Licencia</button>
+        <div class="panel">
           <p>
             Gcolibrí autoriza al usuario a utilizar www.ceromm.com.mx exclusivamente en los términos y
             condiciones aquí expresados, sin que ello implique que concede al usuario licencia o autorización alguna
@@ -209,8 +237,8 @@
             intelectual reconocida o que lleguen a reconocer las leyes correspondientes.
           </p>
         </div>
-        <li id="accordion" class="acc-13">
-          <h3>Otras disposiciones</h3>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Otras disposiciones</button>
+        <div class="panel">
           <p>
             Forma - El usuario acepta que una versión impresa de éstos términos y condiciomes, y de cualquier
             comunicación enviada y/o recibida en forma electrónica, será admisible como medio probatorio en
@@ -223,9 +251,9 @@
             jurisdicción que por razón de sus domicilios presentes o futuros, o por cualquiera otra razón pudiese
             corresponderles.
           </p>
-        </li>
-        <li id="accordion" class="acc-14">
-          <h3>Disposiciones ineficaces</h3>
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Disposiciones ineficaces</button>
+        <div class="panel">
           <p>
             En caso de que alguno de los términos y condiciones aquí expresados sea considerado no ejecutable o se
             declare nulo o inválido de acuerdo con la legislación aplicable, éste será sustituido por un término o
@@ -233,19 +261,36 @@
             o que haya sido declarada nula o inválida. Los demás términos y condiciones continuarán en plena
             vigencia.
           </p>
-        </li>
-        <li id="accordion" class="acc-15">
-          <h3>Derechos</h3>
-          <p>
-            Cualquier derecho que no se haya conferido expresamente en éste documento se entiende reservado a
-            Cero Más Más.
-          </p>
-        </li>
-      </ul>
-
+        </div>
+        <button class="accordion"><i class="fas fa-chevron-down"></i> Derechos</button>
+          <div class="panel">
+            <p>
+              Cualquier derecho que no se haya conferido expresamente en éste documento se entiende reservado a
+              Cero Más Más.
+            </p>
+          </div>
+      </div>
     </div>
 
     <section id ="sur"></section>
     <script type="text/javascript" src="js/controller.js"></script>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+
   </body>
 </html>
