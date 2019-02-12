@@ -182,7 +182,7 @@ body {
       margin-top: 16px; }
 
 .flex-horizontal-container {
-  margin: 16px 0;
+  margin: 0 0 32px;
   display: flex;
   padding: 32px 16px;
   background-color: #D1DFE6;
@@ -197,8 +197,28 @@ body {
     @media (min-width: 1000px) {
       .flex-horizontal-container li {
         width: 33.3333%; } }
+    .flex-horizontal-container li.article {
+      padding: 0 32px; }
     .flex-horizontal-container li img {
       max-width: 60%; }
+
+.text-center {
+  text-align: center;
+  margin: 0 0 32px; }
+  .text-center ul {
+    padding: 0;
+    margin: 16px auto;
+    max-width: 800px;
+    text-align: justify; }
+
+button.primary {
+  text-align: center;
+  background-color: #003968;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 0 none;
+  cursor: pointer; }
 
 .wrap-poli {
   padding: 36px 76px;
