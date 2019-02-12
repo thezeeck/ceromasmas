@@ -1,21 +1,23 @@
+//colors
+$color_regal_blue_approx: #014f6e;
+$color_shark_approx: #292929;
+
 .wrap-poli {
-    padding: 36px 76px;
-    width: 920px;
+	padding: 36px 76px;
+	width: 920px;
+	h3 {
+		color: $color_regal_blue_approx;
+	}
+	p {
+		color: $color_shark_approx;
+	}
 }
 .titulo-poli {
-    color: #014f6e;
-    font-size: 36px;
-}
-.wrap-poli h3 {
-    color: #014f6e;
-}
-.wrap-poli p {
-    color: #292929;
+	color: $color_regal_blue_approx;
+	font-size: 36px;
 }
 .poli-list {
-    line-height: 32px;
+	line-height: 32px;
 }
-
-@media (min-width:320px) {
-  
+@media(min-width:320px) {
 }
