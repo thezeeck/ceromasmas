@@ -16,5 +16,9 @@
 	line-height: 32px;
 }
 
-@media(min-width:320px) {
+#sur .legal-area a {
+	transition: all .5s ease;
+	&:hover {
+		opacity: 0.5;
+	}
 }
