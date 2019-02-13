@@ -44,6 +44,11 @@ body {
         padding-bottom: 0; } }
     #norte nav > i {
       margin-left: 32px; }
+      #norte nav > i:first-child {
+        margin: 0; }
+        @media (min-width: 1000px) {
+          #norte nav > i:first-child {
+            margin-left: 32px; } }
   #norte .sub-header {
     background: #7DA5B7;
     justify-content: center;
@@ -175,6 +180,85 @@ body {
     #sur .legal-area .pieDePagina {
       display: inline-block;
       margin-top: 16px; }
+
+.flex-horizontal-container {
+  margin: 0 0 32px;
+  display: flex;
+  padding: 32px 16px;
+  background-color: #D1DFE6;
+  list-style: none;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .flex-horizontal-container li {
+    width: 100%;
+    padding: 0 16px;
+    max-width: 400px; }
+    @media (min-width: 1000px) {
+      .flex-horizontal-container li {
+        width: 33.3333%; } }
+    .flex-horizontal-container li.article {
+      padding: 0 32px; }
+    .flex-horizontal-container li img {
+      max-width: 60%; }
+
+.text-center {
+  text-align: center;
+  margin: 0 0 32px; }
+  .text-center ul {
+    padding: 0;
+    margin: 16px auto;
+    max-width: 800px;
+    text-align: justify; }
+
+button.primary {
+  text-align: center;
+  background-color: #003968;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border: 0 none;
+  cursor: pointer; }
+
+.accordion {
+  background-color: #fff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s; }
+  .accordion .fas {
+    transition: all .3s ease; }
+  .accordion:hover, .accordion.active {
+    background-color: #ccc; }
+  .accordion.active .fas {
+    transform: rotate(180deg); }
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out; }
+
+.wrap-poli {
+  padding: 36px 76px;
+  width: 920px; }
+  .wrap-poli h3 {
+    color: #014f6e; }
+  .wrap-poli p {
+    color: #292929; }
+
+.titulo-poli {
+  color: #014f6e;
+  font-size: 36px; }
+
+.poli-list {
+  line-height: 32px; }
 
 /* .imagenLogo{
   margin-left:  80px;
