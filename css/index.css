@@ -205,7 +205,8 @@ body {
 .text-center {
   text-align: center;
   margin: 0 0 32px; }
-  .text-center ul {
+  .text-center ul,
+  .text-center p {
     padding: 0;
     margin: 16px auto;
     max-width: 800px;
@@ -219,6 +220,12 @@ button.primary {
   padding: 8px 16px;
   border: 0 none;
   cursor: pointer; }
+
+.parrafoPromo {
+  padding: 0; }
+  .parrafoPromo > li {
+    width: 100%;
+    max-width: inherit; }
 
 .accordion {
   background-color: #fff;
@@ -259,6 +266,15 @@ button.primary {
 
 .poli-list {
   line-height: 32px; }
+
+#sur .legal-area a {
+  transition: all .5s ease; }
+  #sur .legal-area a:hover {
+    opacity: 0.5; }
+
+.textBanner {
+  font-size: 32px;
+  text-align: center; }
 
 /* .imagenLogo{
   margin-left:  80px;
