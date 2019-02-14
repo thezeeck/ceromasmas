@@ -25,9 +25,14 @@ function haderLoad() {
   $("#sur").load("templates/sur.html", function() { $footer.resolve(); });
 }
 
-function carousel(name) {
+function carousel(name, $node) {
+  var tmp = ""
 	 $.get("js/carrusel.json").done(function(data){
-     console.log(data);
+     let arr = data[name];
+     for (var i = 0; i < arr.length; i++) {
+       tmp += `<section><a href="${arr[i].link}"><img src="img/${arr[i].img}"><p>${arr[i].text}</p></a></section>`;
+     }
+     $node.addClass("custom-carrusel").html(tmp);
    });
 }
 function cambia(cual){

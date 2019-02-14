@@ -1,22 +1,19 @@
-[
-  {
-    "name": "home",
-    "content" : [
-      {
-        "img": "carousel1.jpg",
-        "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
-        "link": "#"
-      },
-      {
-        "img": "carousel2.jpg",
-        "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
-        "link": "#"
-      },
-      {
-        "img": "carousel3.jpg",
-        "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
-        "link": "#"
-      }
-    ]
-  }
-]
+{
+  "home": [
+    {
+      "img": "carousel1.jpg",
+      "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
+      "link": "#"
+    },
+    {
+      "img": "carousel2.jpg",
+      "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
+      "link": "#"
+    },
+    {
+      "img": "carousel3.jpg",
+      "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
+      "link": "#"
+    }
+  ]
+}
