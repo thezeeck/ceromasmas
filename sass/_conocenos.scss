@@ -2,3 +2,39 @@
 	font-size: 32px;
 	text-align: center;
 }
+
+.filosofia {
+	display: flex;
+	flex-direction: row;
+    margin-bottom: 46px;
+}
+
+.mision_ind {
+    box-shadow: $shadow;
+	border-radius: 8px;
+    background-color: $color_pacific_blue_50_approx;
+	max-width: 33.3%;
+	margin: 16px 24px;
+    padding: 26px 62px;
+	text-align: center;	
+}
+
+.vision-inde {
+    box-shadow: $shadow;
+    border-radius: 8px;
+    background-color: $color_regal_blue_50_approx;
+	max-width: 33.3%;
+	margin: 16px;
+	padding: 26px 62px;
+	text-align: center;	
+}
+
+.valor-ind {
+    box-shadow: $shadow;
+	border-radius: 8px;
+    background-color: $color_pacific_blue_50_approx;
+	max-width: 33.3%;
+	margin: 16px 24px;
+    padding: 26px 62px;
+	text-align: center;	
+}
