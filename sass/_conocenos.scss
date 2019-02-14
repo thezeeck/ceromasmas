@@ -10,6 +10,7 @@
 }
 
 .mision_ind {
+    box-shadow: $shadow;
 	border-radius: 8px;
     background-color: $color_pacific_blue_50_approx;
 	max-width: 33.3%;
@@ -19,6 +20,7 @@
 }
 
 .vision-inde {
+    box-shadow: $shadow;
     border-radius: 8px;
     background-color: $color_regal_blue_50_approx;
 	max-width: 33.3%;
@@ -28,6 +30,7 @@
 }
 
 .valor-ind {
+    box-shadow: $shadow;
 	border-radius: 8px;
     background-color: $color_pacific_blue_50_approx;
 	max-width: 33.3%;
