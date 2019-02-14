@@ -25,14 +25,25 @@ function haderLoad() {
   $("#sur").load("templates/sur.html", function() { $footer.resolve(); });
 }
 
-function carousel(name, $node) {
+function carousel(name, $node, timer) {
   var tmp = ""
 	 $.get("js/carrusel.json").done(function(data){
-     let arr = data[name];
+     let arr = data[name],
+        counter = 0;
      for (var i = 0; i < arr.length; i++) {
-       tmp += `<section><a href="${arr[i].link}"><img src="img/${arr[i].img}"><p>${arr[i].text}</p></a></section>`;
+       tmp += `<section><a href="${arr[i].link}"><img src="img/${arr[i].img}"><p>${arr[i].text}<br><span>${arr[i].button}</span></p></a></section>`;
      }
      $node.addClass("custom-carrusel").html(tmp);
+
+     $($node.children()[counter]).addClass("active");
+     counter++;
+
+     setInterval(function(){
+       $node.find(".active").removeClass("active");
+       $($node.children()[counter]).addClass("active");
+
+       counter = counter < $node.children().length - 1 ? counter + 1 : 0;
+     }, timer);
    });
 }
 function cambia(cual){

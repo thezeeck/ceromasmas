@@ -30,6 +30,7 @@
 .text-center {
   text-align: center;
   margin: 0 0 32px;
+  padding: 0 32px;
 
   ul,
   p {
@@ -62,8 +63,7 @@ button.primary {
 .custom-carrusel {
   position: relative;
   width: 100%;
-  height: 60vw;
-  margin-bottom: 32px;
+  height: 100vw;
 
   @media (min-width: 1000px) {
     height: 30vw;
@@ -75,6 +75,12 @@ button.primary {
     top: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    transition: all .3s ease;
+
+    &.active {
+      opacity: 1;
+    }
 
     > a {
       display: block;
@@ -85,6 +91,32 @@ button.primary {
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+
+      > p {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        padding: 16px 32px;
+        color: #fff;
+        background-color: rgba($primary-dark, .75);
+        font-size: 6vw;
+        font-weight: bold;
+        text-align: center;
+
+        @media (min-width: 1000px) {
+          font-size: 2vw;
+        }
+
+        > span {
+          background-color: #FFB500;
+          display: inline-block;
+          margin-top: 8px;
+          margin-bottom: 8px;
+          padding: 4px 8px;
+        }
       }
     }
   }

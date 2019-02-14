@@ -204,7 +204,8 @@ body {
 
 .text-center {
   text-align: center;
-  margin: 0 0 32px; }
+  margin: 0 0 32px;
+  padding: 0 32px; }
   .text-center ul,
   .text-center p {
     padding: 0;
@@ -230,8 +231,7 @@ button.primary {
 .custom-carrusel {
   position: relative;
   width: 100%;
-  height: 60vw;
-  margin-bottom: 32px; }
+  height: 100vw; }
   @media (min-width: 1000px) {
     .custom-carrusel {
       height: 30vw; } }
@@ -240,7 +240,11 @@ button.primary {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    opacity: 0;
+    transition: all .3s ease; }
+    .custom-carrusel > section.active {
+      opacity: 1; }
     .custom-carrusel > section > a {
       display: block;
       width: 100%;
@@ -249,6 +253,27 @@ button.primary {
         height: 100%;
         width: 100%;
         object-fit: cover; }
+      .custom-carrusel > section > a > p {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        padding: 16px 32px;
+        color: #fff;
+        background-color: rgba(0, 57, 104, 0.75);
+        font-size: 6vw;
+        font-weight: bold;
+        text-align: center; }
+        @media (min-width: 1000px) {
+          .custom-carrusel > section > a > p {
+            font-size: 2vw; } }
+        .custom-carrusel > section > a > p > span {
+          background-color: #FFB500;
+          display: inline-block;
+          margin-top: 8px;
+          margin-bottom: 8px;
+          padding: 4px 8px; }
 
 .accordion {
   background-color: #fff;
