@@ -62,8 +62,12 @@ button.primary {
 .custom-carrusel {
   position: relative;
   width: 100%;
-  height: 30vw;
+  height: 60vw;
   margin-bottom: 32px;
+
+  @media (min-width: 1000px) {
+    height: 30vw;
+  }
 
   > section {
     position: absolute;
@@ -76,6 +80,12 @@ button.primary {
       display: block;
       width: 100%;
       height: 100%;
+
+      > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

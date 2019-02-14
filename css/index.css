@@ -230,8 +230,11 @@ button.primary {
 .custom-carrusel {
   position: relative;
   width: 100%;
-  height: 30vw;
+  height: 60vw;
   margin-bottom: 32px; }
+  @media (min-width: 1000px) {
+    .custom-carrusel {
+      height: 30vw; } }
   .custom-carrusel > section {
     position: absolute;
     left: 0;
@@ -242,6 +245,10 @@ button.primary {
       display: block;
       width: 100%;
       height: 100%; }
+      .custom-carrusel > section > a > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
 
 .accordion {
   background-color: #fff;
@@ -267,6 +274,13 @@ button.primary {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out; }
+
+img.imgcarousel {
+  width: -webkit-fill-available; }
+
+.textBanner {
+  font-size: 32px;
+  text-align: center; }
 
 .wrap-poli {
   padding: 36px 76px;
