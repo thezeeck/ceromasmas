@@ -1,0 +1,22 @@
+{
+  "home": [
+    {
+      "img": "carousel1.jpg",
+      "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
+      "link": "#",
+      "button": "¡Quiero el sistema Factura One!"
+    },
+    {
+      "img": "carousel2.jpg",
+      "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
+      "link": "#",
+      "button": "¡Quiero el sistema Factura One!"
+    },
+    {
+      "img": "carousel3.jpg",
+      "text": "Factura electrónica personalizada: <br> Confiable, funcional y eficaz",
+      "link": "#",
+      "button": "¡Quiero el sistema Factura One!"
+    }
+  ]
+}

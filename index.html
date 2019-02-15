@@ -10,49 +10,7 @@
   </head>
   <body class="" >
     <section id="norte">  </section>
-    <div id="routupointfaib"class="">
-      <section class="slide Slider1">
-        <div class="divTextoBannerInicio">
-          <p class="textBannerInicio">
-            Factura electrónica personalizada: <br> Confiable, funcional y eficaz
-          </p>
-        </div>
-        <div class="usoUnico">
-          <p class="linkBannerInicio">
-            &nbsp¡Quiero el sistema Factura One! &nbsp
-          </p>
-        </div>
-      </section>
-      <section class="slide Slider2">
-        <div class="divTextoBannerInicio">
-          <p class="textBannerInicio">
-            Factura electrónica personalizada: <br> Confiable, funcional y eficaz
-          </p>
-        </div>
-        <div class="usoUnico">
-          <p class="linkBannerInicio">
-            &nbsp¡Quiero el sistema Factura One! &nbsp
-          </p>
-        </div>
-      </section>
-      <section class="slide Slider3">
-        <div class="divTextoBannerInicio">
-          <p class="textBannerInicio">
-            Factura electrónica personalizada: <br> Confiable, funcional y eficaz
-          </p>
-        </div>
-        <div class="usoUnico">
-          <p class="linkBannerInicio">
-            &nbsp¡Quiero el sistema Factura One! &nbsp
-          </p>
-        </div>
-      </section>
-      <div class="carousel__nav">
-			<button class="carousel_indicator current-slide" onclick="cambia(0)"></button>
-			<button class="carousel_indicator" onclick="cambia(1)"></button>
-			<button class="carousel_indicator" onclick="cambia(2)" ></button>
-		</div>
-    </div>
+    <div id="routupointfaib"></div>
     <ul class="flex-horizontal-container">
       <li>
         <a class="linkPrincipal" href="#">
@@ -131,25 +89,24 @@
    </li>
  </ul>
  <section class="text-center">
-    <article class="">
-      <h2 class="h2section">Cero más, más... ¿Quiénes somos?</h2>
-      <p class="parrafoQuienesSomosEnInicio">
-        Somos una Start Up con un sistema y metodología adaptado a las necesidades
-        específicas de tu negocio; nos importa que aumente tu facturación y ser tu socio de
-        confianza para lograr un ganar-ganar.
-      </p>
-      <p class="parrafoQuienesSomosEnInicio">
-        Estamos enfocados en profesionistas independientes, empresarios, freelance y
-        microempresas, apoyándolos a incrementar la rentabilidad de su negocio. <a class="linkblog" href="conocenos.html">Leer más...</a>
-      </p>
-      <p class="reamte">¡Ninguna idea es demasiado pequeña!</p>
-    </article>
+    <h2 class="h2section">Cero más, más... ¿Quiénes somos?</h2>
+    <p class="parrafoQuienesSomosEnInicio">
+      Somos una Start Up con un sistema y metodología adaptado a las necesidades
+      específicas de tu negocio; nos importa que aumente tu facturación y ser tu socio de
+      confianza para lograr un ganar-ganar.
+    </p>
+    <p class="parrafoQuienesSomosEnInicio">
+      Estamos enfocados en profesionistas independientes, empresarios, freelance y
+      microempresas, apoyándolos a incrementar la rentabilidad de su negocio. <a class="linkblog" href="conocenos.html">Leer más...</a>
+    </p>
+    <p class="reamte">¡Ninguna idea es demasiado pequeña!</p>
  </section>
  <section id="sur"> </section>
  <script type="text/javascript" src="js/controller.js"></script>
  <script type="text/javascript">
-     var slideIndex = 0;
-     carousel();
+     $(function() {
+       carousel("home", $("#routupointfaib"), 3000);
+     });
  </script>
   </body>
 </html>
