@@ -1,7 +1,18 @@
 img.imgcarousel {
     width: -webkit-fill-available;
 }
-.textBanner {
-	font-size: 32px;
-	text-align: center;
+section {
+  > p.textBanner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 16px 32px;
+    color: #fff;
+    background-color: rgba($primary-dark, .75);
+    font-size: 6vw;
+    font-weight: bold;
+    text-align: center;
+  }
 }
