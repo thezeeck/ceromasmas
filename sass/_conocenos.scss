@@ -42,3 +42,19 @@
     padding: 26px 62px;
 	text-align: center;	
 }
+.flex-horizontal-container {
+	&.li.img {
+		transition: all .5s ease;
+	}
+	li img:hover {	
+		transform: scale(0.9);
+		opacity: 0.5;
+	}
+}
+
+button.primary {
+	transition: all .5s ease;
+	&:hover {
+		opacity: 0.5;
+	}
+}
