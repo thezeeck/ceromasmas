@@ -198,7 +198,19 @@ body {
       .flex-horizontal-container li {
         width: 33.3333%; } }
     .flex-horizontal-container li.article {
-      padding: 0 32px; }
+      padding: 0 32px;
+      display: flex;
+      flex-flow: column;
+      margin-bottom: 32px; }
+      @media (min-width: 1000px) {
+        .flex-horizontal-container li.article {
+          margin-bottom: 0; } }
+      .flex-horizontal-container li.article:last-child {
+        margin-bottom: 0; }
+      .flex-horizontal-container li.article > img {
+        max-width: 100%; }
+      .flex-horizontal-container li.article > .textoArticuloBlog {
+        background-color: #fff; }
     .flex-horizontal-container li img {
       max-width: 60%; }
 
@@ -274,9 +286,6 @@ button.primary {
           margin-top: 8px;
           margin-bottom: 8px;
           padding: 4px 8px; }
-
-.flex-horizontal-container .article > img {
-  max-width: 100%; }
 
 .accordion {
   background-color: #fff;

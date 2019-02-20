@@ -19,6 +19,25 @@
 
     &.article {
       padding: 0 32px;
+      display: flex;
+      flex-flow: column;
+      margin-bottom: 32px;
+
+      @media (min-width: 1000px) {
+        margin-bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > img {
+        max-width: 100%;
+      }
+
+      > .textoArticuloBlog {
+          background-color: #fff;
+      }
     }
 
     img {
@@ -120,8 +139,4 @@ button.primary {
       }
     }
   }
-}
-
-.flex-horizontal-container .article > img {
-  max-width: 100%;
 }
