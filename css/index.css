@@ -210,7 +210,9 @@ body {
       .flex-horizontal-container li.article > img {
         max-width: 100%; }
       .flex-horizontal-container li.article > .textoArticuloBlog {
-        background-color: #fff; }
+        background-color: #fff;
+        padding: 16px;
+        text-align: left; }
     .flex-horizontal-container li img {
       max-width: 60%; }
 
