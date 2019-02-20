@@ -42,13 +42,10 @@
     padding: 26px 62px;
 	text-align: center;	
 }
-.flex-horizontal-container {
-	&.li.img {
-		transition: all .5s ease;
-	}
-	li img:hover {	
+.linkPrincipal img {
+	transition: all .5s ease;
+	&:hover {
 		transform: scale(0.9);
-		opacity: 0.5;
 	}
 }
 
