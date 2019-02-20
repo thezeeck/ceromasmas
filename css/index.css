@@ -275,6 +275,9 @@ button.primary {
           margin-bottom: 8px;
           padding: 4px 8px; }
 
+.flex-horizontal-container .article > img {
+  max-width: 100%; }
+
 .accordion {
   background-color: #fff;
   color: #444;
@@ -303,8 +306,17 @@ button.primary {
 img.imgcarousel {
   width: -webkit-fill-available; }
 
-.textBanner {
-  font-size: 32px;
+section > p.textBanner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  padding: 16px 32px;
+  color: #fff;
+  background-color: rgba(0, 57, 104, 0.75);
+  font-size: 6vw;
+  font-weight: bold;
   text-align: center; }
 
 .wrap-poli {
@@ -326,6 +338,9 @@ img.imgcarousel {
   transition: all .5s ease; }
   #sur .legal-area a:hover {
     opacity: 0.5; }
+
+.imgcarousel {
+  width: 100%; }
 
 .textBanner {
   font-size: 32px;
