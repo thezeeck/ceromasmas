@@ -378,6 +378,17 @@ section > p.textBanner {
   padding: 26px 62px;
   text-align: center; }
 
+.flex-horizontal-container.li.img {
+  transition: all .5s ease; }
+.flex-horizontal-container li img:hover {
+  transform: scale(0.9);
+  opacity: 0.5; }
+
+button.primary {
+  transition: all .5s ease; }
+  button.primary:hover {
+    opacity: 0.5; }
+
 /* .imagenLogo{
   margin-left:  80px;
   width: 187px;
