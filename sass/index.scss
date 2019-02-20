@@ -28,6 +28,11 @@ body{
 @import "conocenos";
 @import "_precios";
 
+a {
+  color: $primary-dark;
+  text-decoration: none;
+}
+
 /* .imagenLogo{
   margin-left:  80px;
   width: 187px;

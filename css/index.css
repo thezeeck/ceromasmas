@@ -400,6 +400,10 @@ button.primary {
   button.primary:hover {
     opacity: 0.5; }
 
+a {
+  color: #003968;
+  text-decoration: none; }
+
 /* .imagenLogo{
   margin-left:  80px;
   width: 187px;
