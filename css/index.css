@@ -97,7 +97,8 @@ body {
         display: inline-block;
         color: #fff;
         text-decoration: none;
-        font-size: 20px; }
+        font-size: 20px;
+        transition: all .8s ease; }
         #norte .sub-header .navigation a > i {
           margin: 0 8px 0 0; }
 
@@ -324,6 +325,11 @@ section > p.textBanner {
   font-size: 6vw;
   font-weight: bold;
   text-align: center; }
+
+.itemDescripcionBeneficio {
+  margin: 0 0 32px;
+  padding: 0 32px;
+  display: flex; }
 
 .wrap-poli {
   padding: 32px;
