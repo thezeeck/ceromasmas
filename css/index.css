@@ -494,7 +494,7 @@ button.primary {
   text-align: center;
   margin: 0 30px; }
 
-#roufour {
+.price-1 {
   background-color: #7da5b7;
   height: 220px;
   padding: 30px;
@@ -508,7 +508,6 @@ button.primary {
   color: rgba(8, 154, 190, 0.5);
   font-size: 42px; }
 
-<<<<<<< HEAD
 .boxInoputs {
   padding: 20px 220px;
   margin: 32px 0; }
@@ -525,7 +524,7 @@ button.primary {
 .input.area {
   width: 100%;
   margin: 24px 0px; }
-=======
+
 .static-banner {
   position: relative; }
   .static-banner .textBanner {
@@ -542,7 +541,6 @@ button.primary {
   padding: 0 16px; }
   .flex-img-center h2 {
     margin: 0 0 32px; }
->>>>>>> 572150fb98a1d0690b9dc39cc9095040d1d14ae4
 
 a {
   color: #003968;
