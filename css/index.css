@@ -489,7 +489,25 @@ button.primary {
   margin-bottom: 36px; }
 
 .h2section.NoPad {
+  color: rgba(8, 154, 190, 0.5);
   font-size: 42px; }
+
+.boxInoputs {
+  padding: 20px 220px;
+  margin: 32px 0; }
+
+.input1 {
+  width: 45%;
+  margin-right: 12px;
+  height: 40px; }
+
+.input2 {
+  width: 53%;
+  height: 40px; }
+
+.input.area {
+  width: 100%;
+  margin: 24px 0px; }
 
 a {
   color: #003968;
