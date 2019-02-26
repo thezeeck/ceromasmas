@@ -490,6 +490,17 @@ button.primary {
   width: 50%;
   text-align: center; }
 
+.static-banner {
+  position: relative; }
+  .static-banner .textBanner {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 16px;
+    color: #fff;
+    background-color: rgba(0, 57, 104, 0.75); }
+
 a {
   color: #003968;
   text-decoration: none; }
