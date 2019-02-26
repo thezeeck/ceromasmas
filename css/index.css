@@ -424,6 +424,15 @@ button.primary {
 .textBanner {
   font-weight: bold; }
 
+.leyendaPrecios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.listaPreciosSistema {
+  width: 50%;
+  text-align: center; }
+
 a {
   color: #003968;
   text-decoration: none; }
