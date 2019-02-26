@@ -523,6 +523,11 @@ button.primary {
   padding: 0 16px; }
   .flex-img-center h2 {
     margin: 0 0 32px; }
+  .flex-img-center .flex-horizontal-icons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto 32px; }
 
 a {
   color: #003968;

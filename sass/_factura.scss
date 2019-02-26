@@ -19,4 +19,11 @@
   h2 {
     margin: 0 0 32px;
   }
+
+  .flex-horizontal-icons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto 32px;
+  }
 }
