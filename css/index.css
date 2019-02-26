@@ -444,6 +444,15 @@ button.primary {
 .title_2, .title_1 {
   color: #003968; }
 
+.seccion-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.section1, section2 {
+  width: 50%;
+  text-align: center; }
+
 a {
   color: #003968;
   text-decoration: none; }
