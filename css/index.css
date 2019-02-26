@@ -20,10 +20,14 @@ body {
         #norte header a {
           padding: 16px; } }
       #norte header a img {
-        max-width: 150px; }
+        max-width: 150px;
+        transition: all .5s ease; }
         @media (min-width: 1000px) {
           #norte header a img {
-            max-width: 200px; } }
+            max-width: 200px;
+            transition: all .5s ease; } }
+  #norte .imagenLogo:hover {
+    opacity: 0.5; }
   #norte nav {
     flex: 100%;
     display: flex;
