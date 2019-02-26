@@ -443,6 +443,53 @@ button.primary {
   button.primary:hover {
     opacity: 0.5; }
 
+.flexHorizontalContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.flexHorizontalContainer article {
+  width: 26%;
+  text-align: center;
+  margin: 25px;
+  padding: 30px; }
+
+.paquete, .paquete2, .paquete4 {
+  background-color: #7da5b7;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+.paquet1, .paquete3 {
+  background-color: rgba(8, 154, 190, 0.5);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+.textBanner {
+  font-weight: bold;
+  color: #003968; }
+
+.leyendaPrecios {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.listaPreciosSistema {
+  width: 50%;
+  text-align: center;
+  padding: 0px 48px; }
+
+.title_2, .title_1 {
+  color: #003968; }
+
+.seccion-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.section1, section2 {
+  width: 50%;
+  text-align: center; }
+
 a {
   color: #003968;
   text-decoration: none; }

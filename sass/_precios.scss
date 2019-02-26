@@ -1,0 +1,56 @@
+.flexHorizontalContainer {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexHorizontalContainer article {
+	width: 26%;
+	text-align: center;
+	margin: 25px;
+	padding: 30px;
+}
+
+.paquete, .paquete2, .paquete4   {
+	background-color: $color_bali_hai_approx;
+	border-radius: 8px;
+    box-shadow: $shadow;
+}
+
+.paquet1, .paquete3 {
+    background-color: $color_pacific_blue_50_approx;
+	border-radius: 8px;
+    box-shadow: $shadow;
+}
+
+
+.textBanner {
+	font-weight: bold;
+    color: $color-title;
+}
+
+.leyendaPrecios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.listaPreciosSistema {
+    width: 50%;
+    text-align: center;
+        padding: 0px 48px;
+}
+.title_2, .title_1 {
+    color: $color-title;
+}
+
+.seccion-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section1, section2 {
+    width: 50%;
+    text-align: center;
+}
