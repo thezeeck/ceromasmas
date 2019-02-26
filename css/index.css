@@ -502,6 +502,12 @@ button.primary {
     color: #fff;
     background-color: rgba(0, 57, 104, 0.75); }
 
+.flex-img-center {
+  text-align: center;
+  padding: 0 16px; }
+  .flex-img-center h2 {
+    margin: 0 0 32px; }
+
 a {
   color: #003968;
   text-decoration: none; }
