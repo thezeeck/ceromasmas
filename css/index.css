@@ -406,6 +406,24 @@ button.primary {
   button.primary:hover {
     opacity: 0.5; }
 
+.flexHorizontalContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.flexHorizontalContainer article {
+  width: 26%;
+  text-align: center;
+  margin: 25px;
+  padding: 30px; }
+
+.paquete, .paquet1, .paquete2, .paquete3, .paquete4 {
+  background-color: #7da5b7;
+  border-radius: 8px; }
+
+.textBanner {
+  font-weight: bold; }
+
 a {
   color: #003968;
   text-decoration: none; }
