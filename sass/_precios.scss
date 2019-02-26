@@ -1,0 +1,21 @@
+.flexHorizontalContainer {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexHorizontalContainer article {
+	width: 26%;
+	text-align: center;
+	margin: 25px;
+	padding: 30px;
+}
+
+.paquete, .paquet1, .paquete2, .paquete3, .paquete4   {
+	background-color: $color_bali_hai_approx;
+	border-radius: 8px;
+}
+
+.textBanner {
+	font-weight: bold;
+}
