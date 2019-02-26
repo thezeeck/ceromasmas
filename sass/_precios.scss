@@ -14,6 +14,7 @@
 .paquete, .paquet1, .paquete2, .paquete3, .paquete4   {
 	background-color: $color_bali_hai_approx;
 	border-radius: 8px;
+    box-shadow: $shadow;
 }
 
 .textBanner {
@@ -29,4 +30,6 @@
 .listaPreciosSistema {
     width: 50%;
     text-align: center;
+        padding: 0px 48px;
 }
+
