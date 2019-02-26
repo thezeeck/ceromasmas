@@ -50,7 +50,15 @@
     justify-content: center;
 }
 
-.section1, section2 {
+.section1, .section2 {
     width: 50%;
     text-align: center;
+    margin: 0 30px;
+}
+
+#roufour {
+    background-color: $color_bali_hai_approx;
+    height: 220px;
+    padding: 30px;
+    margin: 40px 0;
 }

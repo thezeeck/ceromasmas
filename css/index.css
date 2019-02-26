@@ -486,9 +486,16 @@ button.primary {
   flex-direction: row;
   justify-content: center; }
 
-.section1, section2 {
+.section1, .section2 {
   width: 50%;
-  text-align: center; }
+  text-align: center;
+  margin: 0 30px; }
+
+#roufour {
+  background-color: #7da5b7;
+  height: 220px;
+  padding: 30px;
+  margin: 40px 0; }
 
 a {
   color: #003968;
