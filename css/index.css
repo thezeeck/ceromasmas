@@ -341,6 +341,22 @@ img.imgcarousel {
   font-weight: bold;
   color: #003968; }
 
+section.static-banner {
+  position: relative; }
+
+.text-banner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  padding: 16px 32px;
+  color: #fff;
+  background-color: rgba(0, 57, 104, 0.75);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center; }
+
 .itemDescripcionBeneficio.flexHorizontalContainer {
   margin: 0 0 32px;
   padding: 0 32px;
@@ -492,6 +508,7 @@ button.primary {
   color: rgba(8, 154, 190, 0.5);
   font-size: 42px; }
 
+<<<<<<< HEAD
 .boxInoputs {
   padding: 20px 220px;
   margin: 32px 0; }
@@ -508,6 +525,24 @@ button.primary {
 .input.area {
   width: 100%;
   margin: 24px 0px; }
+=======
+.static-banner {
+  position: relative; }
+  .static-banner .textBanner {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 16px;
+    color: #fff;
+    background-color: rgba(0, 57, 104, 0.75); }
+
+.flex-img-center {
+  text-align: center;
+  padding: 0 16px; }
+  .flex-img-center h2 {
+    margin: 0 0 32px; }
+>>>>>>> 572150fb98a1d0690b9dc39cc9095040d1d14ae4
 
 a {
   color: #003968;
