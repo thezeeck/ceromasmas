@@ -1,0 +1,13 @@
+.static-banner {
+  position: relative;
+
+  .textBanner {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 16px;
+    color: #fff;
+    background-color: rgba($primary-dark, .75);
+  }
+}

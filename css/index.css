@@ -500,6 +500,24 @@ button.primary {
   padding: 30px;
   margin: 40px 0; }
 
+.title-2 {
+  text-align: center;
+  margin-bottom: 36px; }
+
+.h2section.NoPad {
+  font-size: 42px; }
+
+.static-banner {
+  position: relative; }
+  .static-banner .textBanner {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 16px;
+    color: #fff;
+    background-color: rgba(0, 57, 104, 0.75); }
+
 a {
   color: #003968;
   text-decoration: none; }
