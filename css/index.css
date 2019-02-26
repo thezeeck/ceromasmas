@@ -525,6 +525,11 @@ button.primary {
   width: 100%;
   margin: 24px 0px; }
 
+.link-enviar {
+  width: 100%;
+  height: 50px;
+  cursor: pointer; }
+
 .static-banner {
   position: relative; }
   .static-banner .textBanner {
@@ -541,14 +546,11 @@ button.primary {
   padding: 0 16px; }
   .flex-img-center h2 {
     margin: 0 0 32px; }
-<<<<<<< HEAD
-=======
   .flex-img-center .flex-horizontal-icons {
     display: flex;
     justify-content: space-around;
     max-width: 800px;
     margin: 0 auto 32px; }
->>>>>>> 1e6ebf8b6f1d0ea9de0866e0cd7e9eda4a335d5d
 
 a {
   color: #003968;
