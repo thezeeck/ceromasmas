@@ -82,17 +82,20 @@
     width: 45%;
     margin-right: 12px;
     height: 40px;
+    font-weight: bold;
 }
 .input2 {
 
     width: 53%;
     height: 40px;
+    font-weight: bold;
 
 }
 .input.area {
 
     width: 100%;
     margin: 24px 0px;
+    font-weight: bold;
 
 }
 
@@ -107,6 +110,6 @@
     border-radius: 8px;
     transition: all .5s ease;
     &:hover {
-		opacity: o.5;
+		opacity: 0.5;
 	}
 }
