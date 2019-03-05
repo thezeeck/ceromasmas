@@ -10,37 +10,35 @@
 .filosofia {
 	display: flex;
 	flex-direction: row;
-    margin-bottom: 46px;
+	margin: 0 auto 46px;
+	max-width: 1800px;
+	flex-wrap: wrap;
+	padding: 32px 0;
+
+	> div {
+		width: calc(100% - 32px);
+		margin: 16px;
+		padding: 32px;
+		text-align: center;
+		box-shadow: $shadow;
+		border-radius: 8px;
+
+		@media (min-width: 1000px) {
+			width: calc(33.3333% - 32px);
+		}
+	}
 }
 
 .mision_ind {
-    box-shadow: $shadow;
-	border-radius: 8px;
-    background-color: $color_pacific_blue_50_approx;
-	max-width: 33.3%;
-	margin: 16px 24px;
-    padding: 26px 62px;
-	text-align: center;	
+  background-color: $color_pacific_blue_50_approx;
 }
 
 .vision-inde {
-    box-shadow: $shadow;
-    border-radius: 8px;
-    background-color: $color_regal_blue_50_approx;
-	max-width: 33.3%;
-	margin: 16px;
-	padding: 26px 62px;
-	text-align: center;	
+  background-color: $color_regal_blue_50_approx;
 }
 
 .valor-ind {
-    box-shadow: $shadow;
-	border-radius: 8px;
-    background-color: $color_pacific_blue_50_approx;
-	max-width: 33.3%;
-	margin: 16px 24px;
-    padding: 26px 62px;
-	text-align: center;	
+	background-color: $color_pacific_blue_50_approx;
 }
 .linkPrincipal img {
 	transition: all .5s ease;
