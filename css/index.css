@@ -226,6 +226,8 @@ body {
     margin: 16px auto;
     max-width: 800px;
     text-align: justify; }
+  .text-center .listaFacturaOne {
+    padding-left: 24px; }
 
 button.primary {
   text-align: center;
@@ -343,7 +345,8 @@ img.imgcarousel {
   font-weight: bold;
   color: #003968;
   padding: 16px 32px;
-  border: 0 none; }
+  border: 0 none;
+  display: inline-block; }
 
 section.static-banner {
   position: relative; }
@@ -450,12 +453,39 @@ button.primary {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-
-.flexHorizontalContainer article {
-  width: 26%;
-  text-align: center;
-  margin: 25px;
-  padding: 30px; }
+  .flexHorizontalContainer.custom-size {
+    max-width: 800px;
+    margin: 0 auto; }
+    .flexHorizontalContainer.custom-size > div:first-child {
+      width: 100%;
+      padding: 16px;
+      text-align: left; }
+      @media (min-width: 1000px) {
+        .flexHorizontalContainer.custom-size > div:first-child {
+          flex: 1;
+          padding: 32px 16px; } }
+    .flexHorizontalContainer.custom-size > div:last-child {
+      width: 100%;
+      text-align: center;
+      padding: 16px; }
+      @media (min-width: 1000px) {
+        .flexHorizontalContainer.custom-size > div:last-child {
+          max-width: 225px;
+          width: 30%;
+          padding: 32px 16px; } }
+      .flexHorizontalContainer.custom-size > div:last-child img {
+        width: 100%;
+        max-width: 150px; }
+      .flexHorizontalContainer.custom-size > div:last-child p {
+        text-align: center; }
+    .flexHorizontalContainer.custom-size + h3 {
+      margin: 0;
+      padding-bottom: 32px; }
+  .flexHorizontalContainer article {
+    width: 26%;
+    text-align: center;
+    margin: 25px;
+    padding: 30px; }
 
 .paquete, .paquete2, .paquete4 {
   background-color: #7da5b7;
@@ -579,13 +609,71 @@ button.primary {
     max-width: 800px;
     margin: 0 auto 32px; }
     #descripcionBeneficio > section > div:first-child {
-      max-width: 120px; }
+      max-width: 120px;
+      padding: 16px 0;
+      width: 20%; }
       #descripcionBeneficio > section > div:first-child > img {
         width: 100%; }
     #descripcionBeneficio > section div:last-child {
       flex: 1;
       padding: 16px;
       background-color: #e5e5e5; }
+    #descripcionBeneficio > section:nth-child(1) > div:first-child {
+      background-color: #003968; }
+    #descripcionBeneficio > section:nth-child(2) > div:first-child {
+      background-color: #084F70; }
+    #descripcionBeneficio > section:nth-child(3) > div:first-child {
+      background-color: #83C0FF; }
+    #descripcionBeneficio > section:nth-child(4) > div:first-child {
+      background-color: #FFB500; }
+    #descripcionBeneficio > section:nth-child(5) > div:first-child {
+      background-color: #829FB1; }
+
+#roufaib,
+#rouSiguiente {
+  background-color: #D0DCE5; }
+
+.strong-bg .descargaText {
+  margin-top: 16px; }
+
+.full-padding {
+  padding: 32px; }
+
+.itemDescargas {
+  margin: 0 auto 32px;
+  max-width: 800px;
+  background-color: #E5E5E5;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  .itemDescargas > *:first-child {
+    max-width: 120px;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 8px; }
+    @media (min-width: 1000px) {
+      .itemDescargas > *:first-child {
+        width: 20%; } }
+    .itemDescargas > *:first-child img {
+      width: 100%; }
+  .itemDescargas > *:last-child {
+    padding: 8px 16px;
+    max-width: 120px;
+    width: auto;
+    background-color: #FFB500; }
+    @media (min-width: 1000px) {
+      .itemDescargas > *:last-child {
+        width: 20%; } }
+  .itemDescargas > p {
+    margin: 0;
+    padding: 32px;
+    width: 100%; }
+    @media (min-width: 1000px) {
+      .itemDescargas > p {
+        flex: 1; } }
 
 a {
   color: #003968;

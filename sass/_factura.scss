@@ -38,6 +38,8 @@
 
     > div:first-child {
       max-width: 120px;
+      padding: 16px 0;
+      width: 20%;
 
       > img {
         width: 100%;
@@ -48,6 +50,102 @@
       flex: 1;
       padding: 16px;
       background-color: #e5e5e5;
+    }
+
+    &:nth-child(1) {
+
+      > div:first-child {
+        background-color: #003968;
+      }
+    }
+
+    &:nth-child(2) {
+
+      > div:first-child {
+        background-color: #084F70;
+      }
+    }
+
+    &:nth-child(3) {
+
+      > div:first-child {
+        background-color: #83C0FF;
+      }
+    }
+
+    &:nth-child(4) {
+
+      > div:first-child {
+        background-color: #FFB500;
+      }
+    }
+
+    &:nth-child(5) {
+
+      > div:first-child {
+        background-color: #829FB1;
+      }
+    }
+  }
+}
+
+#roufaib,
+#rouSiguiente {
+  background-color: #D0DCE5;
+}
+
+.strong-bg .descargaText {
+  margin-top: 16px;
+}
+
+.full-padding {
+  padding: 32px;
+}
+
+.itemDescargas {
+  margin: 0 auto 32px;
+  max-width: 800px;
+  background-color: #E5E5E5;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  > *:first-child {
+    max-width: 120px;
+    width: 40%;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 8px;
+
+    @media (min-width: 1000px) {
+      width: 20%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  > *:last-child {
+    padding: 8px 16px;
+    max-width: 120px;
+    width: auto;
+    background-color: #FFB500;
+
+    @media (min-width: 1000px) {
+      width: 20%;
+    }
+  }
+
+  > p {
+    margin: 0;
+    padding: 32px;
+    width: 100%;
+
+    @media (min-width: 1000px) {
+      flex: 1;
     }
   }
 }
