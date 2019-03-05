@@ -326,20 +326,24 @@ img.imgcarousel {
   align-items: center;
   flex-direction: column;
   margin: 16px 32px; }
-  .form-contact input, .form-contact textarea {
+  .form-contact input:not([type="button"]),
+  .form-contact textarea {
     margin: 16px;
     text-align: center;
     padding: 8px;
     font-family: sans-serif;
     width: 50%; }
-    .form-contact input placeholder, .form-contact textarea placeholder {
+    .form-contact input:not([type="button"]) placeholder,
+    .form-contact textarea placeholder {
       color: #434F65; }
 
 .aEnviar {
   padding: 0px 40px;
   background-color: #FFB500;
   font-weight: bold;
-  color: #003968; }
+  color: #003968;
+  padding: 16px 32px;
+  border: 0 none; }
 
 section.static-banner {
   position: relative; }
@@ -515,17 +519,17 @@ button.primary {
   padding: 20px 220px;
   margin: 32px 0;
   text-align: center; }
-  .boxInoputs input,
+  .boxInoputs input:not([type="button"]),
   .boxInoputs textarea {
     width: calc(100% - 34px);
     padding: 8px 16px;
     font-weight: bold;
     margin: 0 16px 16px; }
     @media (min-width: 1000px) {
-      .boxInoputs input,
+      .boxInoputs input:not([type="button"]),
       .boxInoputs textarea {
         width: calc(50% - 34px); }
-        .boxInoputs input:first-child,
+        .boxInoputs input:not([type="button"]):first-child,
         .boxInoputs textarea:first-child {
           margin-bottom: 0; } }
   @media (min-width: 1000px) {
