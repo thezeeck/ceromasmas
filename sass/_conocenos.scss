@@ -14,6 +14,7 @@
 	max-width: 1800px;
 	flex-wrap: wrap;
 	padding: 32px 0;
+	justify-content: center;
 
 	> * {
 		width: calc(100% - 32px);

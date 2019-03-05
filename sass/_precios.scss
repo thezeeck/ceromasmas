@@ -33,12 +33,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+		flex-wrap: wrap;
 }
 
 .listaPreciosSistema {
-    width: 50%;
-    text-align: center;
-        padding: 0px 48px;
+  width: 100%;
+  text-align: center;
+  padding: 0px 48px;
+
+	@media (min-width: 1000px) {
+		width: 50%;
+	}
 }
 .title_2, .title_1 {
     color: $color-title;
@@ -48,17 +53,21 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+		flex-wrap: wrap;
 }
 
 .section1, .section2 {
-    width: 50%;
+    width: 100%;
     text-align: center;
-    margin: 0 30px;
+    padding: 0 32px;
+
+		@media (min-width: 1000px) {
+			width: 50%;
+		}
 }
 
 .price-1 {
     background-color: $color_bali_hai_approx;
-    height: 220px;
     padding: 30px;
     margin: 40px 0;
 }
@@ -76,20 +85,25 @@
 .boxInoputs {
     padding: 20px 220px;
     margin: 32px 0;
-}
-.input1 {
 
-    width: 45%;
-    margin-right: 12px;
-    height: 40px;
-    font-weight: bold;
-}
-.input2 {
+		input {
+			width: calc(100% - 34px);
+			padding: 8px 16px;
+			font-weight: bold;
+			margin: 0 16px;
 
-    width: 53%;
-    height: 40px;
-    font-weight: bold;
+			&:first-child {
+				margin-bottom: 16px;
+			}
 
+			@media (min-width: 1000px) {
+				width: calc(50% - 34px);
+
+				&:first-child {
+					margin-bottom: 0;
+				}
+			}
+		}
 }
 .input.area {
 
