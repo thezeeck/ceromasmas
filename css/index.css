@@ -578,6 +578,14 @@ button.primary {
     display: flex;
     max-width: 800px;
     margin: 0 auto 32px; }
+    #descripcionBeneficio > section > div:first-child {
+      max-width: 120px; }
+      #descripcionBeneficio > section > div:first-child > img {
+        width: 100%; }
+    #descripcionBeneficio > section div:last-child {
+      flex: 1;
+      padding: 16px;
+      background-color: #e5e5e5; }
 
 a {
   color: #003968;

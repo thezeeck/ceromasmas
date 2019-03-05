@@ -35,5 +35,19 @@
     display: flex;
     max-width: 800px;
     margin: 0 auto 32px;
+
+    > div:first-child {
+      max-width: 120px;
+
+      > img {
+        width: 100%;
+      }
+    }
+
+    div:last-child {
+      flex: 1;
+      padding: 16px;
+      background-color: #e5e5e5;
+    }
   }
 }
