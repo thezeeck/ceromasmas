@@ -407,11 +407,11 @@ section.static-banner {
 .filosofia {
   display: flex;
   flex-direction: row;
-  margin: 0 auto 46px;
+  margin: 0 auto;
   max-width: 1800px;
   flex-wrap: wrap;
   padding: 32px 0; }
-  .filosofia > div {
+  .filosofia > * {
     width: calc(100% - 32px);
     margin: 16px;
     padding: 32px;
@@ -419,7 +419,7 @@ section.static-banner {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 8px; }
     @media (min-width: 1000px) {
-      .filosofia > div {
+      .filosofia > * {
         width: calc(33.3333% - 32px); } }
 
 .mision_ind {
